@@ -2,12 +2,12 @@
 def apt_search1(city, max_rent, min_beds, pets_allowed):
     # Check if pets are allowed and assign correct string value to pets variable
     if pets_allowed:
-        pets = "that allows pets"
+        pets = " that allows pets"
     else:
         pets = ""
     # Print f-string output to pass parameter and function variable values to the string
     print(
-        f"Welcome to GC Property Management! Looking up listings in {city} for {min_beds} bedroom apartments {pets}, all within a budget of ${max_rent} per month...")
+        f"Welcome to GC Property Management! Looking up listings in {city} for {min_beds} bedroom apartments{pets}, all within a budget of ${max_rent} per month...")
 
 # Instantiate apt_search1 correctly (ie with parameter values)
 apt_search1("Detroit", 2000, 3, True)
@@ -17,12 +17,12 @@ print()
 def apt_search2(city, max_rent, min_beds = 2, pets_allowed = False):
     # Check if pets are allowed and assign correct string value to pets variable
     if pets_allowed:
-        pets = "that allows pets"
+        pets = " that allows pets"
     else:
         pets = ""
     # Print f-string output to pass parameter and function variable values to the string
     print(
-        f"Welcome to GC Property Management! Looking up listings in {city} for {min_beds} bedroom apartments {pets}, all within a budget of ${max_rent} per month...")
+        f"Welcome to GC Property Management! Looking up listings in {city} for {min_beds} bedroom apartments{pets}, all within a budget of ${max_rent} per month...")
 
 # Instantiate apt_search2 function as instructed in assignment
 apt_search2("Chicago", 1500)
